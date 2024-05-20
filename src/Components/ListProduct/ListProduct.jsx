@@ -19,6 +19,7 @@ const ListProduct = () => {
   const remove_product = async (id) => {
     await fetch('https://manipurmart-backend.onrender.com/removeproduct', {
       method: 'POST',
+      credentials: "same-origin",
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',

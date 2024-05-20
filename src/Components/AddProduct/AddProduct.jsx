@@ -29,6 +29,7 @@ const AddProduct = () => {
 
     await fetch('https://manipurmart-backend.onrender.com/upload', {
       method: 'POST',
+      credentials: "same-origin",
       headers: {
         Accept: 'application/json',
       },
@@ -42,6 +43,7 @@ const AddProduct = () => {
       console.log(product);
       await fetch('https://manipurmart-backend.onrender.com/addproduct', {
         method: 'POST',
+        credentials: "same-origin",
         headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json',
